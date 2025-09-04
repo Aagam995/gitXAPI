@@ -30,9 +30,36 @@ window.Script1 = function()
         objectName: "Quiz 1"
     },
     result: {
-        score: {
-            scaled: 0.85 // Example score (from the quiz result)
-        }
+        "success": true,
+        "response": "%TextEntry%"
+    }
+};
+
+ADL.XAPIWrapper.sendStatement(statement, function(response) {
+    console.log("xAPI Statement Sent: ", response);
+});
+
+}
+
+window.Script2 = function()
+{
+  var statement = {
+    actor: {
+        mbox: "mailto:student@example.com", // Replace with learner’s identifier
+        name: "John Doe"
+    },
+    verb: {
+        id: "http://adlnet.gov/expapi/verbs/completed",
+        display: {"en-US": "completed"}
+    },
+    object: {
+        id: "https://aagam995.github.io/gitXAPI/",
+        objectType: "Activity",
+        objectName: "Quiz 2"
+    },
+    result: {
+        "success": true,
+        "response": "%TextEntry1%"
     }
 };
 

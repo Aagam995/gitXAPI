@@ -2,8 +2,11 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5hgdWHqk0MV":
+      case "5g0tW7e7d62":
         Script1();
+        break;
+      case "65AeLiViq81":
+        Script2();
         break;
   }
 }
@@ -28,6 +31,6 @@ function getActor() {
   return {
     "mbox": "mailto:myexample@domain.com",
     "objectType": "Agent",
-    "name": "My Example"
+    "name": "IMD_OverseasOpportunities_agent"
   };
 }
