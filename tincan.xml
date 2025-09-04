@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="urn:articulate:storyline:5bLOOuVuQrN" type="http://adlnet.gov/expapi/activities/course">
+			<name lang="und">Untitled1</name>
+			<description lang="und" />
+			<launch lang="und">index_lms.html</launch>
+		</activity>
+		<activity id="urn:articulate:storyline:5bLOOuVuQrN/6SAaKCYyorr" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Intro Slide</name>
+			<description lang="und">Intro Slide</description>
+		</activity>
+	</activities>
+</tincan>
