@@ -15,7 +15,11 @@ var slideWidth = player.slideWidth;
 var slideHeight = player.slideHeight;
 window.Script1 = function()
 {
-  var statement = {
+  const player = GetPlayer();
+var text = player.GetVar("TextEntry");
+
+
+var statement = {
     actor: {
         mbox: "mailto:student@example.com", // Replace with learner’s identifier
         name: "John Doe"
@@ -31,7 +35,7 @@ window.Script1 = function()
     },
     result: {
         "success": true,
-        "response": "%TextEntry%"
+        "response": text
     }
 };
 
@@ -43,7 +47,11 @@ ADL.XAPIWrapper.sendStatement(statement, function(response) {
 
 window.Script2 = function()
 {
-  var statement = {
+  const player = GetPlayer();
+var text = player.GetVar("TextEntry");
+
+
+var statement = {
     actor: {
         mbox: "mailto:student@example.com", // Replace with learner’s identifier
         name: "John Doe"
@@ -55,11 +63,11 @@ window.Script2 = function()
     object: {
         id: "https://aagam995.github.io/gitXAPI/",
         objectType: "Activity",
-        objectName: "Quiz 2"
+        objectName: "Quiz 1"
     },
     result: {
         "success": true,
-        "response": "%TextEntry1%"
+        "response": "text"
     }
 };
 
